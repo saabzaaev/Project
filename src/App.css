@@ -48,3 +48,6 @@ li:hover
     background-position: 100%;
     background-size: 60% 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
