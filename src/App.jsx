@@ -64,14 +64,14 @@ function App()
   return (
     <main className=" bg-[#FAF2F6] w-[100%] flex flex-col mains">
 
-      <nav className=" ph:bg-white nav p-[10px] flex justify-center gap-12 items-center text-[16px] fixed top-0 right-0 w-[100%] z-10 ph:w-[100%] ph:justify-between ph:p-[10px]">
+      <nav className=" ph:bg-white  nav p-[10px] z-20 flex justify-center gap-12 items-center text-[16px] fixed top-0 right-0 w-[100%] ph:w-[100%] ph:justify-between ph:p-[10px]">
         <img src={logo1} alt="Logo" />
         <ul className="flex gap-8 items-center ph:hidden">
-          <li>Почему мы?</li>
-          <li>Наши продукты</li>
-          <li>О нас</li>
-          <li>Наша команда</li>
-          <li>Контакты</li>
+          <li><a href="#first">Почему мы?</a></li>
+          <li><a href="#second">Наши продукты</a></li>
+          <li><a href="#third">О нас</a></li>
+          <li><a href="#four">Наша команда</a></li>
+          <li><a href="#five">Контакты</a></li>
         </ul>
         <button className=" btn  rounded-md p-[5px_10px] font-[600] tracking-[1px]">Оставить заявку</button>
       </nav>
@@ -115,8 +115,8 @@ function App()
         <img src={blueCircle} alt="." className=" absolute left-[120px] top-[90px] ph:hidden" />
         <img src={orangeCircle} alt="." className=" absolute right-[0px] top-[0px] ph:hidden" />
 
-        <p className="text-[35px] tracking-[1px] font-bold">Почему мы?</p>
-        <p className="w-[40%] text-center ph:w-[100%]">We offer youth with chances for career development in their practice. We also support a wide range of services to ensure client satisfaction</p>
+        <p className="text-[35px] tracking-[1px] font-bold" id="first">Почему мы?</p>
+        <p className="w-[40%] text-center ph:w-[100%]">Мы предлагаем молодежи возможность карьерного роста в своей практике. Мы также поддерживаем широкий спектр услуг для обеспечения удовлетворенности клиентов.</p>
         
         <aside className=" w-[70%] m-auto mt-[80px] grid grid-cols-3 gap-[20px] ph:grid-cols-1 ph:w-[100%]">
           <Card img={chat} title={"Всё для наших клиентов"} desc={"Наша философия базируется на простой идее: мы относимся к нашим клиентам так, как хотели бы, чтобы относились к нам."} />
@@ -131,7 +131,7 @@ function App()
 
         <img src={blueRectangle} alt="." className=" absolute right-[120px] top-[120px] ph:hidden hidden" />
 
-        <p className="text-[35px] tracking-[1px] font-bold">Наши продукты</p>
+        <p className="text-[35px] tracking-[1px] font-bold" id="second">Наши продукты</p>
         <p className="w-[40%] text-center ph:w-[100%]">We provide a number of excellent features that will undoubtedly improve the user experience. We also provide a better support system</p>
         
         <aside className="flex justify-between items-center w-[70%] mt-[30px] ph:w-[100%] ph:flex-col gap-5">
@@ -172,7 +172,7 @@ function App()
         <img src={perpleSnake} alt="." className=" absolute right-[80px] top-[460px] ph:hidden" />
         <img src={blueCircle2} alt="." className=" absolute right-[0px] top-[-400px] ph:hidden" />
         
-        <p className="text-[35px] tracking-[1px] font-bold">О нас </p>
+        <p className="text-[35px] tracking-[1px] font-bold" id="third">О нас </p>
         <p className="w-[55%] text-center ph:w-[100%]">Мы - проект Noor, ваш надежный партнер в финансах. Наша цель - предоставить инструменты для успешного управления финансами и достижения ваших целей. Стремимся к стабильности и уверенности в будущем каждого клиента, учитывая их уникальные потребности и ожидания.</p>
         
         <aside className="w-[70%] m-[50px_auto] grid grid-cols-3 grid-rows-2 gap-[20px] ph:w-[100%] ph:grid-cols-1 ph:grid-rows-6">
@@ -193,8 +193,8 @@ function App()
         <img src={pinkCircle} alt="." className=" absolute left-[-700px] bottom-[-300px] ph:hidden" />
 
 
-        <p className="text-[35px] tracking-[1px] font-bold ph:text-center">What our clients have to say </p>
-        <p className="w-[33%] text-center ph:w-[100%]">Our success is determined on how satisfied out customers are with the service. These reviews say we have stuff to do.</p>
+        <p className="text-[35px] tracking-[1px] font-bold ph:text-center" >Что говорят наши клиенты </p>
+        <p className="w-[33%] text-center ph:w-[100%]">Наш успех определяется тем, насколько наши клиенты удовлетворены обслуживанием. В этих отзывах говорится, что нам есть чем заняться.</p>
 
         <aside className="flex justify-between items-center m-[20px_0] w-[70%] ph:flex-col-reverse ph:gap-10 ph:w-[100%]">
           <aside className="w-[50%] flex flex-col gap-3 ph:w-[100%]">
@@ -217,7 +217,7 @@ function App()
             <p>Мы верим, что ключом к созданию уникального продукта являются талантливые люди, работающие вместе в атмосфере честности и стремящиеся к достижению целей.</p>
             <div className="flex gap-2 items-center">
               <p className="font-bold">Салохиддин Солиев</p>
-              <p>CEO</p>
+              <p>CPO</p>
             </div>
           </aside>
         </aside>
@@ -226,7 +226,7 @@ function App()
 
       {/* section 7 */}
       <section className=" flex flex-col gap-[10px] items-center mt-[20px] ph:p-[10px]">
-        <p className="text-[35px] tracking-[1px] font-bold">Наша команда</p>
+        <p className="text-[35px] tracking-[1px] font-bold" id="four">Наша команда</p>
         <p className="w-[33%] text-center ph:w-[100%]">People from various origins, cultures, and personalities make up our team. This blend makes it a powerful team</p>
         <aside className="w-[70%] m-[30px_auto] grid grid-cols-4 gap-[20px] ph:grid-cols-1 ph:w-[100%]">
           <PersonCard img={p1} title={"Salohiddin Soliev"} desc={"Co-founder & CPO"}/>
@@ -241,7 +241,7 @@ function App()
 
         <img src={blueRectangle} alt="." className=" absolute left-[160px] top-[-70px] ph:hidden hidden" />
         
-        <p className="text-[40px] font-bold text-center">Предварительная заявка</p>
+        <p className="text-[40px] font-bold text-center" id="five">Предварительная заявка</p>
         
         <aside className="flex gap-[50px] items-center  justify-end w-[100%] p-[0_250px_0_0] ph:flex-col ph:p-[10px] relative py-[100px] maps">
           <form className="blurs p-[10px] rounded-xl flex flex-col gap-3 w-[35%] z-10  ph:w-[100%]">
